@@ -5,7 +5,7 @@ import { FiStar } from "react-icons/fi";
 const Cards = ({cards}) => {
     return (
         <div>
-            <Link to='/listbooks'>
+            <Link to={`/books/${cards.bookId}`}>
                     <div>
                         <div className="card  bg-base-100 shadow-xl  p-9 ">
                             <figure className="px-10 pt-10   ">
