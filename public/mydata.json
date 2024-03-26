@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Silent Conspiracy",
+      "author": "Emma Harris",
+      "image": "https://i.ibb.co/zrHbD00/kindpng-4022054-1.png",
+      "review": "A gripping thriller that keeps you on the edge of your seat until the very end. Harris weaves a complex web of deceit and intrigue, leaving readers guessing until the final page.",
+      "totalPages": 368,
+      "rating": 4.5,
+      "category": "Thriller",
+      "tags": ["Suspense", "Conspiracy", "Mystery"],
+      "publisher": "Penguin Books",
+      "yearOfPublishing": 2023
+    },
+    {
+      "bookId": 2,
+      "bookName": "Echoes of Eternity",
+      "author": "Jonathan Smith",
+      "image": "https://i.ibb.co/2MD7pgC/kindpng-7318921.png",
+      "review": "Smith's poetic prose transports readers to a world where time stands still and memories linger like echoes in the wind. A beautiful and thought-provoking exploration of love, loss, and the passage of time.",
+      "totalPages": 432,
+      "rating": 4.8,
+      "category": "Literary Fiction",
+      "tags": ["Romance", "Time Travel", "Philosophical"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 2022
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Midnight Garden",
+      "author": "Sarah Thompson",
+      "image": "https://i.ibb.co/yq90Sx8/kindpng-2193744-1.png",
+      "review": "Thompson's enchanting tale of magic and friendship captivates readers from beginning to end. With lush descriptions and vivid imagery, she transports you to a world where anything is possible.",
+      "totalPages": 320,
+      "rating": 4.3,
+      "category": "Fantasy",
+      "tags": ["Magic", "Friendship", "Adventure"],
+      "publisher": "Scholastic",
+      "yearOfPublishing": 2024
+    },
+    {
+      "bookId": 4,
+      "bookName": "Broken Wings",
+      "author": "David Martinez",
+      "image": "https://i.ibb.co/hgjmtCr/kindpng-81724-1.png",
+      "review": "Martinez's raw and honest portrayal of grief and redemption will leave you breathless. A hauntingly beautiful story that lingers in your thoughts long after you turn the last page.",
+      "totalPages": 288,
+      "rating": 4.6,
+      "category": "Contemporary Fiction",
+      "tags": ["Drama", "Family", "Emotional"],
+      "publisher": "Simon & Schuster",
+      "yearOfPublishing": 2023
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Art of Deception",
+      "author": "Michael Johnson",
+      "image": "https://i.ibb.co/qYbz1YP/kindpng-2592315-1.png",
+      "review": "Johnson's gripping thriller is a rollercoaster ride of twists and turns. With expertly crafted suspense and unexpected plot twists, it keeps you guessing until the very end.",
+      "totalPages": 384,
+      "rating": 4.7,
+      "category": "Mystery",
+      "tags": ["Suspense", "Crime", "Intrigue"],
+      "publisher": "Random House",
+      "yearOfPublishing": 2022
+    },
+    {
+      "bookId": 6,
+      "bookName": "Beyond the Horizon",
+      "author": "Jessica Adams",
+      "image": "https://i.ibb.co/LxXyMVv/kindpng-4945926-1.png",
+      "review": "Adams takes readers on an unforgettable journey across time and space in this epic tale of adventure and discovery. With richly drawn characters and breathtaking landscapes, it's a story you won't want to end.",
+      "totalPages": 416,
+      "rating": 4.9,
+      "category": "Science Fiction",
+      "tags": ["Adventure", "Exploration", "Space"],
+      "publisher": "Orbit Books",
+      "yearOfPublishing": 2023
+    }
+  ]
+  
