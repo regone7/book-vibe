@@ -1,16 +1,21 @@
 
 import { useLoaderData, useParams } from 'react-router-dom';
-import { saveDataToReadstorage } from '../utlity/localstorageread';
+import { saveDataToReadstorage, saveDataToWishliststorage } from '../utlity/localstorageread';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Booksditels = () => {
     const books = useLoaderData()
     const { bookId } = useParams()
     const bookIdINT = parseInt(bookId)
     const book = books.find(book => book.bookId === bookIdINT)
-    console.log(book);
+    // console.log(book);
 
     const handelRead =()=>{
         saveDataToReadstorage(book);
+    }
+    const handelWishlist=()=>{
+        saveDataToWishliststorage(book)
     }
     return (
         <div className="container mx-auto my-7">
@@ -50,9 +55,11 @@ const Booksditels = () => {
                     </div>
                     <div className='flex gap-2'>
                     <button onClick={handelRead} className="btn btn-outline btn-primary">Read</button>
-                    <button className="btn btn-info">Wishlist</button>
+                    <button onClick={handelWishlist} className="btn btn-info">Wishlist</button>
                     </div>
+
                 </div>
+                <ToastContainer />
 
             </div>
         </div>
