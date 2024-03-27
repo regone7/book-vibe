@@ -5,13 +5,18 @@ import 'react-tabs/style/react-tabs.css';
 // import { GrUserManager } from "react-icons/gr";
 // import { FaBook } from "react-icons/fa";
 import Readbooks from "../components/Readbooks";
+import Wishlistbooks from "../components/Wishlistbooks";
 
 const Listedbooks = () => {
     const [aplyBook, setAplyBook] = useState([]);
-    console.log(aplyBook);
+    const [aplyWish, setAplyWish] =useState([]);
+    // console.log(aplyBook);
+    console.log(aplyWish);
     useEffect(() => {
         const getLocaldatas = JSON.parse(localStorage.getItem("books")) || [];
         setAplyBook(getLocaldatas);
+        const getLocaldataswst = JSON.parse(localStorage.getItem("wishs")) || [];
+        setAplyWish(getLocaldataswst);
     }, [])
     return (
         <div className="container mx-auto my-7">
@@ -31,7 +36,13 @@ const Listedbooks = () => {
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <h2>Any content 2</h2>
+                    <div className="grid col-span-1 space-y-3 mt-5">
+                            {
+                                aplyWish.map(wishbook => (
+                                    <Wishlistbooks key={wishbook.bookId} wishbook={wishbook}></Wishlistbooks>
+                                ))
+                            }
+                        </div>
                     </TabPanel>
                 </Tabs>
 
