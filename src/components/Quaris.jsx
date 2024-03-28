@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const Quaris = () => {
     const handelSubmit=()=>{
-        toast("Submit");
+        toast.success("Submit");
     }
     return (
         <div>

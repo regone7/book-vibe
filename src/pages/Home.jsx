@@ -4,7 +4,7 @@ import Cards from "../components/Cards";
 
 const Home = () => {
     const home = useLoaderData()
-    console.log(home)
+    // console.log(home)
     return (
         <div className="container mx-auto my-7">
             <div className="bg-gray-200 rounded-md h-[754px] lg:h-[454px] flex flex-col lg:flex-row  items-center gap-1">

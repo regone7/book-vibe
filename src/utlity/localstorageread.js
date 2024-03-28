@@ -5,12 +5,12 @@ export const saveDataToReadstorage = (book) => {
     const seatRead = JSON.parse(localStorage.getItem("books")) || [];
     const dataRead = seatRead.find((item) => item.bookId == book.bookId);
     if (dataRead) {
-        toast("This book is already in  Read list.")
+        toast.warning("This book is already in  Read list.")
     } else {
         seatRead.push(book);
         const localValue = JSON.stringify(seatRead);
         localStorage.setItem("books", localValue);
-        toast("Successfully Add Read List")
+        toast.success("Successfully Add Read List")
     }
 };
 
@@ -20,13 +20,13 @@ export const saveDataToWishliststorage = (wish) => {
     const dataWish = seatWish.find((items) => items.bookId == wish.bookId);
     const dataReads = seatReads.find((items) => items.bookId ==wish.bookId);
     if (dataReads) {
-        toast("This book is already in  Read list.")
+        toast.warning("This book is already in  Read list.")
     }else if((!dataWish)) {
         seatWish.push(wish);
         const localValues = JSON.stringify(seatWish);
         localStorage.setItem("wishs", localValues);
-        toast("Successfully Add Wishlists ")
+        toast.success("Successfully Add Wishlists ")
     }else{
-        toast("Already it etits Wishlists");
+        toast.error("Already it etits Wishlists");
     }
 };

@@ -17,26 +17,26 @@ const PagesToReadchar = () => {
     const [bkcharts, setBkcharts] = useState([]);
     // console.log(bkcharts)
     useEffect(() => {
-        fetch('/mydata.json')
-            .then(res => res.json())
-            .then(data => {
-                const chartdata = data;
-                const barchart = chartdata.map(chart => {
-                    const obj = {
-                        bookname: chart.bookName,
-                        bookpage: chart.totalPages
+        const getLocaldatas = JSON.parse(localStorage.getItem("books")) || [];
 
-                    }
-                    return obj;
-                })
-                console.log(barchart)
-                setBkcharts(barchart);
-            })
+        const chartdata = getLocaldatas;
+        const barchart = chartdata.map(chart => {
+            const obj = {
+                bookname: chart.bookName,
+                bookpage: chart.totalPages
+
+            }
+            return obj;
+        })
+        console.log(barchart)
+        setBkcharts(barchart);
+
+        
     }, [])
 
     return (
         <div className="flex justify-center items-center lg:mt-32  ">
-             <BarChart
+            <BarChart
                 width={1500}
                 height={300}
                 data={bkcharts}
@@ -56,6 +56,7 @@ const PagesToReadchar = () => {
                     ))}
                 </Bar>
             </BarChart>
+            
         </div>
     );
 };
