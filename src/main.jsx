@@ -11,6 +11,8 @@ import Listedbooks from './pages/Listedbooks';
 import Booksditels from './pages/Booksditels';
 import Errorpage from './components/Errorpage';
 import PagesToReadchar from './pages/PagesToReadchar';
+import Publicreaction from './components/Publicreaction';
+import Quaris from './components/Quaris';
 
 const router = createBrowserRouter([
   {
@@ -36,8 +38,14 @@ const router = createBrowserRouter([
       path: "/pagescharts",
       element: <PagesToReadchar></PagesToReadchar>,
      },
-
-
+     {
+      path: "/publicreaction",
+      element: <Publicreaction></Publicreaction>,
+     },
+     {
+      path: "/quaris",
+      element: <Quaris></Quaris>,
+     },
     ]
   },
 ]);
