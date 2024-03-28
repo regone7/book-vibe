@@ -13,6 +13,7 @@ import Errorpage from './components/Errorpage';
 import PagesToReadchar from './pages/PagesToReadchar';
 import Publicreaction from './components/Publicreaction';
 import Quaris from './components/Quaris';
+import Graphchart from './pages/Graphchart';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
      {
       path: "/quaris",
       element: <Quaris></Quaris>,
+     },
+     {
+      path: "/graph",
+      element: <Graphchart></Graphchart>,
      },
     ]
   },

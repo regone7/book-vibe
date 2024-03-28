@@ -25,8 +25,8 @@ const Listedbooks = () => {
         let datas = [...aplyBook]
 
         let result = datas.sort((a, b) => b.rating - a.rating)
-        console.log(setAplyBook([...result]))
-       
+        setAplyBook(result)
+
 
 
 
