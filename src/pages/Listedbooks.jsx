@@ -11,7 +11,7 @@ const Listedbooks = () => {
     const [aplyBook, setAplyBook] = useState([]);
     const [aplyWish, setAplyWish] =useState([]);
     // console.log(aplyBook);
-    console.log(aplyWish);
+    // console.log(aplyWish);
     useEffect(() => {
         const getLocaldatas = JSON.parse(localStorage.getItem("books")) || [];
         setAplyBook(getLocaldatas);

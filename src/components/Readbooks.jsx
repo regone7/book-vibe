@@ -13,7 +13,7 @@ const Readbooks = ({ bookdata }) => {
                 </div>
                 <div className="lg:w-[73%] space-y-4 p-5">
                     <h1 className="font-bold text-2xl  text-center lg:text-start">{bookdata.bookName}</h1>
-                    <p className="text-center lg:text-start">{bookdata.author}</p>
+                    <p className="text-center lg:text-start">By: {bookdata.author}</p>
                     <div className="flex flex-col lg:flex-row justify-start items-center gap-5">
                         <h1 className="font-bold">Tag</h1>
                         <div className="flex justify-start items-center gap-1">

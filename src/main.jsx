@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Listedbooks from './pages/Listedbooks';
 import Booksditels from './pages/Booksditels';
 import Errorpage from './components/Errorpage';
+import PagesToReadchar from './pages/PagesToReadchar';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       path: "/books/:bookId",
       element: <Booksditels></Booksditels>,
       loader: () => fetch('/mydata.json'),
+     },
+     {
+      path: "/pagescharts",
+      element: <PagesToReadchar></PagesToReadchar>,
      },
 
 

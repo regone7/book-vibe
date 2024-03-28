@@ -18,9 +18,10 @@ const Navber = () => {
                     <a className="btn btn-ghost text-xl  ">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 space-x-3">
                         <NavLink to='/' className={({isActive})=>isActive ? 'text-accent font-bold bg-white border-2 border-green-300 rounded-md w-16 h-9 flex justify-center items-center' : 'font-bold w-16 h-9 flex justify-center items-center'}>Home</NavLink>
-                        <NavLink to='/listbooks' className={({isActive})=>isActive ? 'text-accent font-bold bg-white border-2 border-green-300 rounded-md w-24 h-9 flex justify-center items-center ' : 'font-bold w-24 h-9 flex justify-center items-center'}>Listed Books</NavLink>  
+                        <NavLink to='/listbooks' className={({isActive})=>isActive ? 'text-accent font-bold bg-white border-2 border-green-300 rounded-md w-24 h-9 flex justify-center items-center ' : 'font-bold w-24 h-9 flex justify-center items-center'}>Listed Books</NavLink> 
+                        <NavLink to='/pagescharts' className={({isActive})=>isActive ? 'text-accent font-bold bg-white border-2 border-green-300 rounded-md w-32 h-9 flex justify-center items-center ' : 'font-bold w-24 h-9 flex justify-center items-center'}>Pages To Read</NavLink> 
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-1 flex-col lg:flex-row">

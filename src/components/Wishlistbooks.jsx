@@ -13,7 +13,7 @@ const Wishlistbooks = ({wishbook}) => {
                 </div>
                 <div className="lg:w-[73%] space-y-4 p-5">
                     <h1 className="font-bold text-2xl  text-center lg:text-start">{wishbook.bookName}</h1>
-                    <p className="text-center lg:text-start">{wishbook.author}</p>
+                    <p className="text-center lg:text-start">By: {wishbook.author}</p>
                     <div className="flex flex-col lg:flex-row justify-start items-center gap-5">
                         <h1 className="font-bold">Tag</h1>
                         <div className="flex justify-start items-center gap-1">
