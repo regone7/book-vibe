@@ -10,6 +10,8 @@ import Wishlistbooks from "../components/Wishlistbooks";
 const Listedbooks = () => {
     const [aplyBook, setAplyBook] = useState([]);
     const [aplyWish, setAplyWish] = useState([]);
+    const [aplySort, setAplySort] = useState([]);
+    const [aplyStwh, setAplyStwh] = useState([]);
     // console.log(aplyBook);
     // console.log(aplyWish);
 
@@ -22,16 +24,55 @@ const Listedbooks = () => {
     }, [])
 
     const handelRating = () => {
-        let datas = [...aplyBook]
+        let datas = aplyBook;
+        let wdatas = aplyWish;
 
         let result = datas.sort((a, b) => b.rating - a.rating)
-        setAplyBook(result)
+        setAplyBook(result);
+        setAplySort(result);
+
+        let wresult = wdatas.sort((a, b) => b.rating - a.rating)
+        setAplyWish(wresult);
+        setAplyStwh(wresult);
+
+        // console.log(wresult);
+        // console.log(wresult);
+
+    }
+    const handelPages = () => {
+        let datas1 = aplyBook;
+        let wdatas1 = aplyWish;
 
 
+        let result1 = datas1.sort((a, b) => b.totalPages - a.totalPages)
+        setAplyBook(result1);
+        setAplySort(result1);
 
+        // console.log(result1);
 
-        console.log("clicked")
+        let wresult1 = wdatas1.sort((a, b) => b.totalPages - a.totalPages)
+        setAplyWish(wresult1);
+        setAplyStwh(wresult1);
 
+        // console.log(wresult1);
+
+    }
+
+    const handelYear = () => {
+        let datas2 = aplyBook;
+        let wdatas2 = aplyWish;
+
+        let result2 = datas2.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+        setAplyBook(result2);
+        setAplySort(result2);
+
+        // console.log(result2);
+        
+        let wresult2 = wdatas2.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+        setAplyWish(wresult2);
+        setAplyStwh(wresult2);
+
+        // console.log(wresult2);
     }
 
 
@@ -43,8 +84,8 @@ const Listedbooks = () => {
                     <summary className="m-1 btn">Sort By</summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 ">
                         <li><button onClick={handelRating} >Rating</button></li>
-                        <li><button>Numberof pages</button>a</li>
-                        <li><button>Published year</button>b</li>
+                        <li><button onClick={handelPages}>Numberof pages</button></li>
+                        <li><button onClick={handelYear}>Published year</button></li>
                     </ul>
                 </details>
             </div>

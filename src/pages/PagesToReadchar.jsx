@@ -27,7 +27,7 @@ const PagesToReadchar = () => {
             }
             return obj;
         })
-        console.log(barchart)
+        // console.log(barchart)
         setBkcharts(barchart);
 
         
